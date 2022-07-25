@@ -1,0 +1,1 @@
+ENV DIGITALOCEAN_ACCESS_TOKEN=<yourdigitalaccesstoken>
