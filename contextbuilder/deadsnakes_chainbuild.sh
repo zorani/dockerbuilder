@@ -8,7 +8,7 @@ dockergitrepos["dockerimage_ubuntu22.04_add_default_user"]="https://github.com/z
 dockergitrepos["dockerimage_ubuntu22.04_pythondev"]="https://github.com/zorani/dockerimage_ubuntu22.04_pythondev.git"
 
 for key in ${!dockergitrepos[@]}; do 
-    if [ ! ${key} ]
+    if [ ! -d ${key} ]
     then 
         git clone ${dockergitrepos[${key}]}
     else
@@ -44,11 +44,11 @@ docker push zokidoki/ubuntu22.04_deadsnakes:1.0
 
 #Lets delete all the repos if you dont need them.
 
-#exit 9999
+exit 9999
 cd ..
 
 for key in ${!dockergitrepos[@]}; do 
-    if [ ${key} ]
+    if [ -d ${key} ]
     then
         echo "deleting ${key} ..." 
         rm -rf ${key}

@@ -1,6 +1,8 @@
 #!/bin/bash
 
 cd .. 
+pwd
+touch hello.txt
 
 declare -A dockergitrepos
 dockergitrepos["dockerimage_ubuntu22.04_base"]="https://github.com/zorani/dockerimage_ubuntu22.04_base.git"
@@ -8,7 +10,8 @@ dockergitrepos["dockerimage_ubuntu22.04_add_default_user"]="https://github.com/z
 dockergitrepos["dockerimage_ubuntu22.04_pythondev"]="https://github.com/zorani/dockerimage_ubuntu22.04_pythondev.git"
 
 for key in ${!dockergitrepos[@]}; do 
-    if [ ! ${key} ]
+    echo ${key}
+    if [ ! -d ${key} ]
     then 
         git clone ${dockergitrepos[${key}]}
     else
@@ -18,7 +21,7 @@ done
 
 #Lets delete all the repos if you dont need them.
 #Comment/Uncomment next line if you want to delete/not-delete
-exit 9999
+#exit 9999
 
 for key in ${!dockergitrepos[@]}; do 
     if [ ${key} ]
