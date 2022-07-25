@@ -1,8 +1,6 @@
 #!/bin/bash
 
 cd .. 
-pwd
-touch hello.txt
 
 declare -A dockergitrepos
 dockergitrepos["dockerimage_ubuntu22.04_base"]="https://github.com/zorani/dockerimage_ubuntu22.04_base.git"
