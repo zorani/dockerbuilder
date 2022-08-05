@@ -1,0 +1,5 @@
+[user]
+	email = {youremail}
+	name = {yourname}
+[credential]
+	helper = store
