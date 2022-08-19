@@ -3,7 +3,7 @@
 cd .. 
 
 declare -A dockergitrepos
-dockergitrepos["dockerimage_ubuntu22.04_add_secrets"]="dockerimage_ubuntu22.04_add_secrets"
+dockergitrepos["dockerimage_ubuntu22.04_add_secrets"]="https://github.com/zorani/dockerimage_ubuntu22.04_add_secrets.git"
 
 for key in ${!dockergitrepos[@]}; do 
     if [ ! -d ${key} ]
