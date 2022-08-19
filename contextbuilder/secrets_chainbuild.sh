@@ -20,13 +20,13 @@ done
 #Lets build the local secret image
 cd dockerimage_ubuntu22.04_add_secrets
 ./rebuildimage.sh 
-#No push to docker hub will take place.
+#Docker Push missing... as a push to docker hub with your newlwy added secrets isn't advised.
 #You don't want your secrets to be public.
 
 
 #Lets delete all the repos if you dont need them.
 
-exit 9999
+#exit 9999
 cd ..
 
 for key in ${!dockergitrepos[@]}; do 
