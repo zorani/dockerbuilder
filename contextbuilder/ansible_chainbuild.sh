@@ -42,6 +42,7 @@ docker push zokidoki/ubuntu22.04_base:deadsnakes
 docker tag zokidoki/ubuntu22.04_base:deadsnakes  zokidoki/ubuntu22.04_deadsnakes:1.0
 docker push zokidoki/ubuntu22.04_deadsnakes:1.0
 
+cd ..
 #Lets build an ansible image 
 cd dockerimage_ubuntu22.04_ansible
 ./rebuildimage.sh 
