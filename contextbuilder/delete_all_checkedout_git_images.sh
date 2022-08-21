@@ -9,6 +9,7 @@ dockergitrepos["dockerimage_ubuntu22.04_pythondev"]="https://github.com/zorani/d
 dockergitrepos["dockerimage_ubuntu22.04_python"]="https://github.com/zorani/dockerimage_ubuntu22.04_python.git"
 dockergitrepos["dockerimage_ubuntu22.04_add_secrets"]="https://github.com/zorani/dockerimage_ubuntu22.04_add_secrets.git"
 dockergitrepos["dockerimage_ubuntu22.04_ansible"]="https://github.com/zorani/dockerimage_ubuntu22.04_ansible.git"
+dockergitrepos["dockerimage_ubuntu22.04_secrets_ansible"]="https://github.com/zorani/dockerimage_ubuntu22.04_secrets_ansible.git"
 
 #for key in ${!dockergitrepos[@]}; do 
 #    echo ${key}
