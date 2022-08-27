@@ -3,3 +3,5 @@
 	name = {yourname}
 [credential]
 	helper = store
+[alias]
+        setgituser = "!f() { git config user.email 'your@email.address' && git config user.name 'youruser'; }; f"
