@@ -3,9 +3,9 @@
 cd .. 
 
 declare -A dockergitrepos
-dockergitrepos["dockerimage_ubuntu22.04_base"]="https://github.com/zorani/dockerimage_ubuntu22.04_base.git"
-dockergitrepos["dockerimage_ubuntu22.04_add_default_user"]="https://github.com/zorani/dockerimage_ubuntu22.04_add_default_user.git"
-dockergitrepos["dockerimage_ubuntu22.04_pythondev"]="https://github.com/zorani/dockerimage_ubuntu22.04_pythondev.git"
+dockergitrepos["dockerimage_ubuntu22.04_base"]="git@zi.github.com:zorani/dockerimage_ubuntu22.04_base.git"
+dockergitrepos["dockerimage_ubuntu22.04_add_default_user"]="git@zi.github.com:zorani/dockerimage_ubuntu22.04_add_default_user.git"
+dockergitrepos["dockerimage_ubuntu22.04_pythondev"]="git@zi.github.com:zorani/dockerimage_ubuntu22.04_pythondev.git"
 
 for key in ${!dockergitrepos[@]}; do 
     if [ ! -d ${key} ]

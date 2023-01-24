@@ -3,7 +3,7 @@
 cd .. 
 
 declare -A dockergitrepos
-dockergitrepos["dockerimage_ubuntu22.04_secrets_ansible"]="https://github.com/zorani/dockerimage_ubuntu22.04_secrets_ansible.git"
+dockergitrepos["dockerimage_ubuntu22.04_secrets_ansible"]="git@zi.github.com:zorani/dockerimage_ubuntu22.04_secrets_ansible.git"
 
 for key in ${!dockergitrepos[@]}; do 
     if [ ! -d ${key} ]
