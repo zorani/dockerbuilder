@@ -10,6 +10,7 @@ dockergitrepos["dockerimage_ubuntu22.04_python"]="git@zi.github.com:zorani/docke
 dockergitrepos["dockerimage_ubuntu22.04_add_secrets"]="git@zi.github.com:zorani/dockerimage_ubuntu22.04_add_secrets.git"
 dockergitrepos["dockerimage_ubuntu22.04_ansible"]="git@zi.github.com:zorani/dockerimage_ubuntu22.04_ansible.git"
 dockergitrepos["dockerimage_ubuntu22.04_secrets_ansible"]="git@zi.github.com:zorani/dockerimage_ubuntu22.04_secrets_ansible.git"
+dockergitrepos["dockerimage_zokihole_pihole"]="git@github.com:zorani/dockerimage_zokihole_pihole.git"
 
 for key in ${!dockergitrepos[@]}; do 
     echo ${key}

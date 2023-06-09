@@ -44,7 +44,7 @@ docker push zokidoki/ubuntu22.04_defaultpython:1.0
 
 #Lets delete all the repos if you dont need them.
 
-##exit 9999
+#exit 9999
 cd ..
 
 for key in ${!dockergitrepos[@]}; do 
